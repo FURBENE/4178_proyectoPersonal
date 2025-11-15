@@ -1,0 +1,193 @@
+/*Top Header*/
+
+.topheader {
+  position: find;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.013rem;
+}
+
+.Menu-Horizontal {
+  list-style: None;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Menu-Horizontal li a {
+  text-decoration: None;
+  padding: 0.938rem 1.25px;
+  color: blue;
+}
+
+.Menu-Horizontal li a:hover {
+  color: red;
+}
+
+.Menu-Vertical {
+  padding: 0;
+  position: absolute;
+  list-style: None;
+  display: None;
+  width: 180;
+}
+
+.Menu-Vertical li {
+  background-color: lightgray;
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+
+.Menu-Vertical li a {
+  display: block;
+  color: black;
+}
+
+.seccion-formulario {
+  background-color: #95b5ff;
+  padding: 2.5rem;
+  border: 0.188rem solid blue;
+  border-radius: 0.625rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.div-cont-formulario {
+  background-color: lightcyan;
+  padding: 1.875rem;
+  border: 0.125rem solid blueviolet;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 31.25rem;
+}
+
+.campo {
+  background-color: #d7b8f4;
+  padding: 0.938rem;
+  margin-bottom: 0.938rem;
+  border: 0.063rem solid brown;
+  border-radius: 0.313rem;
+}
+
+.formulario label {
+  display: block;
+  color: #2e3493;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.formularioinput[type: "text"], .formulario select {
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.094rem;
+}
+
+.formulario input[type="text"],
+.formulario select {
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.094rem solid #5b037c;
+  border-radius: 0.188rem;
+}
+
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  background-color: lightblue;
+  border: 0.094rem solid #5b037c;
+  border: 0.063rem solid;
+  border-radius: 0.094rem;
+}
+
+.formulario button {
+  background-color: #d37cf2;
+  border: 0.125rem solid #5b037c;
+  border-radius: 0.125rem;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+}
+
+/* Footer general */
+.footer {
+  background-color: #222; /* Fondo oscuro para contraste */
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Contenedor flexible para 3 columnas */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+/* Marca o logotipo */
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces legales */
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Redes sociales con íconos */
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }
+}
