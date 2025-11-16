@@ -12,34 +12,85 @@
     
     <h1></h1>
     <nav class="topheader">
-      <a href "" class="logo">
-        <img width="150" height="" src="\imagenes\Diners_Club_Logo3.svg.png" alt=""/>
+      <a href="" class="logo">
+        <img width="150" height="" src="\imagenes\bets_icon.png" alt=""/>
 
       </a>
       <ul class="Menu-Horizontal">
-        <li><a href="">Promociones</a></li>
+        <li><a href="#Promociones">Promociones</a></li>
         <li><a href="">Soluciones</a>
           <ul class="Menu-Vertical">
-            <li><a href="">Servicios financieros</a></li>
-            <li><a href="">Seguros</a></li>
-            <li><a href="">Soluciones</a></li>
-            <li><a href="">Mundo Diners</a></li>
+            <li><a href="">Apuestas en vivo</a></li>
+            <li><a href="">Casino</a></li>
+            <li><a href="">E-Sports</a></li>
+            <li><a href="">Ligas internacionales</a></li>
           </ul>
         
         </li>
-        <li><a href="">Privilegios</a></li>
+        <li><a href="#Privilegios">Privilegios</a></li>
         <li><a href="">Canales</a></li>
         <li><a href="#Contactanos">Contáctanos</a></li>
       </ul>
     </nav>
+
+    <section class ="seccion-promo" id="Promociones">
+      <div class="div-gral-promo">
+        <div class="div-promo-texto">
+          <h2>Seccion promociones</h2>
+          <p>
+            Aprovecha los bonos y ofertas especiales diseñadas para mejorar tu experiencia de apuestas desde tu primer ingreso. Obtén beneficios como apuestas gratis, recargas con porcentaje extra, giros sin costo en casino y promociones especiales para eventos deportivos.</p>
+          <p>
+            Cada semana encontrarás nuevas oportunidades para ganar más. No te quedes fuera de los mejores torneos y eventos destacados del momento. ¡Comienza hoy y juega con ventaja!
+          </p>
+
+        </div>
+
+        <div class="div-promo-img">
+          <img src="imagenes/promociones_adicional.png" alt="Promoción especial: Bono 300% extra y giros gratis"/>
+        </div>
+        
+      </div>
+
+    </section>
+
+
+    <section class ="seccion-privi" id="Privilegios">
+      <div class="div-gral-privi">
+        <div class="div-privi-texto">
+          <h2>Seccion privilegios</h2>
+          <p>
+            Obtén beneficios exclusivos y experiencias premium: atención personalizada, bonificaciones especiales, mayores límites de retiro y accesos preferenciales a eventos deportivos nacionales e internacionales.
+          </p>
+          <p>
+            Mientras más participas, más recompensas desbloqueas: niveles avanzados, invitaciones VIP, artículos oficiales y regalos para fechas especiales. Únete a la comunidad élite de jugadores y lleva tu experiencia al siguiente nivel.
+          </p>
+
+        </div>
+
+        <div class="div-privi-video">
+          <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/nSqGvEfLgNA?si=bo7Yi3e4rKXtvc30"
+           title="YouTube video player" 
+           frameborder="0" 
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          
+        </div>
+        
+      </div>
+
+    </section>
+
+
 
     <section class="seccion-formulario" id="Contactanos">
       <div class="div-cont-formulario">
         <h2>Formulario de registro</h2>
         <p>Complete todos los campos</p>
 
-
-        
 
         <!--DV1 INPUT=TEXT-->
         <div class="campo">
@@ -51,6 +102,7 @@
         <div class="campo">
         
         <form class="formulario">
+          <label>Equipo favorito:</label>
           <select>
           <option value="">Seleccione un equipo</option>
           <option value="alianza lima">Alianza Lima</option>
@@ -65,10 +117,10 @@
           <label>Intereses:</label>
           <ul class="lista-checkbox">
             <li><label><input type="radio" name="Intereses" value="a">Deportes</label></li>
-            <li><label><input type="radio" name="Intereses" value="b">Viajes</label></li>
-            <li><label><input type="radio" name="Intereses" value="c">Tecnología</label></li>
-            <li><label><input type="radio" name="Intereses" value="d">Gastronomía</label></li>
-
+            <li><label><input type="radio" name="Intereses" value="b">Casinos</label></li>
+            <li><label><input type="radio" name="Intereses" value="c">E-Sports</label></li>
+            <li><label><input type="radio" name="Intereses" value="d">Futbol internacional</label></li>
+          </ul>
 
         </div>
 
@@ -78,6 +130,7 @@
           <ul class="lista-radio">
             <li><label><input type="radio" name="sexo" value="m">Masculino</label></li>
             <li><label><input type="radio" name="sexo" value="f">Femenino</label></li>
+          </ul>
         </div>
 
         
@@ -90,7 +143,7 @@
             <!-- Logo y nombre de sitio -->
             <div class="footer-brand">
               <img
-                src="imagenes/Diners_Club_Logo3.svg.png"
+                src="\imagenes\bets_icon.png"
                 alt="Logo"
                 class="footer-logo"
               />

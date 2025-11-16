@@ -1,14 +1,20 @@
 /*Top Header*/
 
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 .topheader {
-  position: find;
-  background-color: #f5f5f5;
+  position: fixed;
+  background-color: #132040;
   width: 100%;
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.013rem;
+  border-bottom: #00e676;
 }
 
 .Menu-Horizontal {
@@ -21,11 +27,11 @@
 .Menu-Horizontal li a {
   text-decoration: None;
   padding: 0.938rem 1.25px;
-  color: blue;
+  color: #dce3ff;
 }
 
 .Menu-Horizontal li a:hover {
-  color: red;
+  color: #00e676;
 }
 
 .Menu-Vertical {
@@ -49,8 +55,86 @@
   color: black;
 }
 
+/*SECCION PROMOCION */
+.seccion-promo {
+  padding: 3.75rem 1.25rem;
+  background-color: cadetblue;
+}
+
+.div-gral-promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.div-promo-texto {
+  flex: 1;
+}
+
+.div-promo-texto h2 {
+  color: cyan;
+  margin-bottom: 0.938rem;
+}
+
+.div-promo-texto p {
+  color: black;
+  line-height: 1.6;
+}
+
+.div-promo-img {
+  flex: 1;
+}
+
+.div-promo-img img {
+  width: 100%;
+  max-width: 31.25rem;
+}
+
+/*SECCION PRIVILEGIO*/
+.seccion-privi {
+  padding: 3.75rem 1.25rem;
+  background-color: white;
+}
+.div-gral-privi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.div-privi-texto {
+  flex: 1;
+}
+
+.div-privi-texto h2 {
+  color: cyan;
+  margin-bottom: 0.938rem;
+}
+
+.div-privi-texto p {
+  color: black;
+  line-height: 1.6;
+}
+
+.div-privi-video {
+  flex: 1;
+}
+
+.div-privi-video iframe {
+  width: 100%;
+  max-width: 100%;
+  max-width: 31.25rem;
+}
+
+/*SECCION FORMULARIO*/
+
 .seccion-formulario {
-  background-color: #95b5ff;
+  background-color: #1a233a;
   padding: 2.5rem;
   border: 0.188rem solid blue;
   border-radius: 0.625rem;
@@ -60,16 +144,16 @@
 }
 
 .div-cont-formulario {
-  background-color: lightcyan;
+  background-color: #132040;
   padding: 1.875rem;
-  border: 0.125rem solid blueviolet;
+  border: 0.125rem solid #00e676;
   border-radius: 0.5rem;
   width: 100%;
   max-width: 31.25rem;
 }
 
 .campo {
-  background-color: #d7b8f4;
+  background-color: #0a0f24;
   padding: 0.938rem;
   margin-bottom: 0.938rem;
   border: 0.063rem solid brown;
@@ -78,12 +162,13 @@
 
 .formulario label {
   display: block;
-  color: #2e3493;
+  color: #00e676;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
-.formularioinput[type: "text"], .formulario select {
+.formulario input[type="text"],
+.formulario select {
   width: 100%;
   padding: 0.625rem;
   border: 0.094rem;
@@ -93,25 +178,32 @@
 .formulario select {
   width: 100%;
   padding: 0.625rem;
-  border: 0.094rem solid #5b037c;
+  border: 0.094rem solid #0a0f24;
   border-radius: 0.188rem;
 }
 
 .lista-checkbox,
 .lista-radio {
   list-style: none;
-  background-color: lightblue;
+  background-color: #132040;
   border: 0.094rem solid #5b037c;
-  border: 0.063rem solid;
+  border: 0.063rem solid #00e676;
   border-radius: 0.094rem;
 }
 
 .formulario button {
   background-color: #d37cf2;
-  border: 0.125rem solid #5b037c;
+  border: 0.125rem solid #00e676;
   border-radius: 0.125rem;
   padding: 0.625rem 1.25rem;
   cursor: pointer;
+}
+
+.div-cont-formulario h2,
+.div-cont-formulario p,
+.div-cont-formulario ul,
+.campo > label {
+  color: #00e676;
 }
 
 /* Footer general */
